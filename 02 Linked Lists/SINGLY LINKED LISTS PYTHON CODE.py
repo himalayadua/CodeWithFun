@@ -1,4 +1,11 @@
 class ListNode:
+
+    # self is a reference to the instance of the class
+    # used to access the attributes and methods of the object within the class
+
+    # __init__ is a special method in Python classes, also known as the constructor. 
+    # It is automatically called when an object is created from the class. 
+    # The purpose of __init__ is to initialize the object's attributes and perform any necessary setup.
     def __init__(self, val):
         self.val = val
         self.next = None
