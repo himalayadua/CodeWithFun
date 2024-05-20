@@ -39,7 +39,7 @@ At last, put the value of variable x in the last index of the array.
 
 ### Intuition
 
-When I first encountered the problem of rotating an array, my initial thought was to create a new array to store the rotated elements. This seemed like a straightforward approach, where I could directly place each element into its new position. I thought of using an extra array (`output`) where the elements of the original array (`nums`) could be repositioned based on the rotation count `k`. The idea was to calculate the new index for each element and then copy them back to `nums`.
+When I first encountered the problem of rotating an array, my initial thought was to create a new array to store the rotated elements. This seemed like a straightforward approach, where I could directly place each element into its new position. I thought of using an extra array (`output`) where the elements of the original array (`nums`) could be repositioned based on the rotation count `k`. The idea was to calculate the new index for each element and then copy them back to `nums`. 
 
 ### Approach
 
