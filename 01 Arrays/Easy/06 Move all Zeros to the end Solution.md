@@ -27,3 +27,24 @@ The algorithm will be the following.
 3.  While moving the pointer i, we will do the following:
     1.  If a[i] != 0 i.e. a[i] is a non-zero element: We will swap a[i] and a[j]. Now, the current j is pointing to the non-zero element a[i]. So, we will shift the pointer j by 1 so that it can again point to the first zero.
 4.  Finally, our array will be set in the right manner.
+
+
+# Approach 3:
+
+## Intuition
+
+The core idea is to segregate all non-zero elements from the zeroes in a given array without altering the non-zero elements' relative order. This process aims to push all zeros to the end of the array while keeping the algorithm's space complexity to a minimum by modifying the array in place.
+
+## Approach
+
+-   Two-Pointer Method: Utilize two pointers, L (Left) and R (Right), to scan through the array. L is used to find zeroes that need to be moved, and R acts as a boundary of the non-zero elements, decreasing when a zero is identified at the end.
+-   In-Place Swap: When a zero is found by L, it's removed and inserted before R, effectively pushing it towards the end within the boundary. This ensures that the insertion of zeros does not disrupt the relative order of the non-zero elements.
+-   Boundary Adjustment: The R pointer is adjusted (decremented) each time a zero is moved to ensure the zeros accumulate at the end of the array, and the non-zero elements stay within the new boundary defined by R.
+
+## Complexity
+
+-   Time complexity: The algorithm's time complexity is a bit complex due to the removal and insertion operations within the loop. Each pop and insert operation is O(n), making it less efficient, especially for large arrays, as these operations are executed within a while loop.
+
+-   Space complexity: O(1) - The solution modifies the array in place without using any additional space proportional to the input array size, fulfilling the in-place requirement.
+
+

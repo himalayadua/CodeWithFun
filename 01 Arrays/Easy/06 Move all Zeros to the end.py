@@ -38,10 +38,9 @@ print()
 # Reason: The temporary array stores the non-zero elements. In the worst case, all the given array elements will be non-zero.
 
 
+####################################################################################
+
 # Solution 2:
-
-
-
 
 def moveZeros(n: int,  a: [int]) -> [int]:
     j = -1
@@ -79,5 +78,44 @@ print()
 # Reason: We have used 2 loops and using those loops, we are basically traversing the array once.
 
 # Space Complexity: O(1) as we are not using any extra space to solve this problem.
+
+
+######################################################################
+
+# Solution 3:
+
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        L, R = 0, len(nums)-1
+
+        while L <= R:
+            while nums[R] == 0 and L<=R:
+                R-=1
+            
+            while nums[L] == 0 and L <= R:
+                temp = nums.pop(L)
+                nums.insert(R, temp)
+                R-=1
+            else:
+                L+=1
+
+
+# Solution 4:
+
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        insert_pos = 0
+        
+        for num in nums:
+            if num != 0:
+                nums[insert_pos] = num
+                insert_pos += 1
+        
+        while insert_pos < len(nums):
+            nums[insert_pos] = 0
+            insert_pos += 1
 
 
