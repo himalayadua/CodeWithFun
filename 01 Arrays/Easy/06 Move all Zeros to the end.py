@@ -1,5 +1,8 @@
 # Solution 1:
 
+from typing import List
+
+
 def moveZeros(n: int,  a: [int]) -> [int]:
     # Temporary array
     temp = []
