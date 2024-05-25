@@ -19,10 +19,10 @@ Input: nums = [1,1,1,3,3,4,3,2,4,2]
 Output: true
 
 ## Step 1. Understand the problem:
-To understand the problem, you would note the following key points:
+To understand the problem, you would `note the following key` points:
 
-- The input is an integer array called nums.
-- The goal is to determine whether any value appears at least twice in the array.
+- The input is an *integer array* called nums.
+- The goal is to determine whether *any value* appears at least twice in the array.
 - If any value appears at least twice, the function should return true. Otherwise, it should return false.
 
 
