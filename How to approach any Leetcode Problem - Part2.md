@@ -125,51 +125,16 @@ Breaking down the problem involves identifying the key subtasks or steps require
 
 To solve this problem, we can break it down into the following steps:
 
-1. **Create a set to store unique values:** Initialize an empty set called `unique_set` to store unique values encountered in the array.
+1. **Create a data structure unique values:** set, or array. a flag variable to store False.
 
-2. **Iterate through the array:** Iterate over each element, `num`, in the `nums` array.
+2. **Iterate through the array:** using a loop logic.
 
-3. **Check for duplicates:** For each element, check if it already exists in the `unique_set`. If it does, return true since we have found a duplicate value.
+3. **Check for duplicates:** match against the store created in step 1.
 
-4. **Add unique elements to the set:** If the element does not exist in the `unique_set`, add it to the set to keep track of unique values.
+4. **Add unique elements to the set:** if no match found, add it to the store.  if match is found, set flag variable to True and return.
 
-5. **Return false if no duplicates are found:** After iterating through all elements in the array, if no duplicates were found, return false since every element is distinct.
+5. **Return false if no duplicates are found:** if no duplicates encountered, return flag variable.
 
-
-Certainly! Here's a sample code implementation that follows the steps outlined for breaking down the problem:
-
-```python
-def containsDuplicate(nums):
-    unique_set = set()  # Step 1: Create a set to store unique values
-    
-    for num in nums:  # Step 2: Iterate through the array
-        if num in unique_set:  # Step 3: Check for duplicates
-            return True  # Return true if a duplicate is found
-        
-        unique_set.add(num)  # Step 4: Add unique elements to the set
-    
-    return False  # Step 5: Return false if no duplicates are found
-
-# Test the function with example inputs
-nums1 = [1, 2, 3, 1]
-print(containsDuplicate(nums1))  # Output: True
-
-nums2 = [1, 2, 3, 4]
-print(containsDuplicate(nums2))  # Output: False
-
-nums3 = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
-print(containsDuplicate(nums3))  # Output: True
-```
-
-In this code, the `containsDuplicate` function takes an integer array `nums` as input and follows the steps outlined:
-
-1. It initializes an empty set called `unique_set` to store unique values encountered in the array.
-2. It iterates over each element, `num`, in the `nums` array.
-3. For each element, it checks if it already exists in the `unique_set`. If a duplicate is found, it returns `True`.
-4. If the element is not already in the `unique_set`, it adds it to the set.
-5. After iterating through all elements, if no duplicates were found, it returns `False`.
-
-The function is then tested with the example inputs provided in the problem statement. Running the code will produce the expected outputs based on the examples mentioned earlier.
 
 
 ## Step 6: Design an algorithm.
