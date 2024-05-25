@@ -52,31 +52,21 @@ The problem does not explicitly mention any time or space complexity requirement
 
 ## Step 2: Clarify doubts and ask questions.
 
-After understanding the problem statement and considering potential constraints and edge cases, you may have some doubts or questions that need clarification. Let's go through the checklist of 11 items and see how a beginner software engineer might approach this step:
+After understanding the problem statement and considering potential constraints and edge cases, you may have some doubts or questions that need clarification. Let's go through the checklist and see how to approach this step:
 
 1. **Is the problem statement clear?** In this case, the problem statement is relatively clear. It asks us to determine if any value appears at least twice in the given array.
 
-2. **Are there any terms or concepts that require further explanation?** The problem statement uses simple terms and does not introduce any complex concepts. It uses the terms "integer array," "value," and "distinct elements," which are familiar to a beginner software engineer.
+2. **Are there any terms or concepts that require further explanation?** The problem statement uses simple terms and does not introduce any complex concepts. It uses the terms "integer array," "value," and "distinct elements," which are familiar to a software engineer.
 
 3. **Do you need to handle any specific data types or ranges?** The problem does not specify any particular data types or ranges for the input array of integers. It allows for a generic integer array.
 
-4. **Is there any required input or output format?** The problem does not specify any specific input or output format. It expects a boolean output indicating whether any value appears at least twice in the array.
+4. **Is there any required input or output format?** The problem does not specify any specific input or output format. It expects a **boolean output** indicating whether any value appears at least twice in the array.
 
 5. **Are there any constraints on the time or space complexity?** The problem does not mention any explicit constraints on the time or space complexity. As a beginner, it can be assumed that an efficient solution is desirable, but no specific complexity requirements are given.
 
 6. **Should the solution be optimized for a specific use case or scenario?** The problem does not mention any specific use case or scenario that requires optimization. It seems to be a general case problem.
 
 7. **Are there any dependencies on external systems or libraries?** The problem does not indicate any dependencies on external systems or libraries. We can assume that the solution should be implemented using only standard programming constructs and the provided programming language.
-
-8. **Is there any potential for ambiguity in the problem statement?** The problem statement is relatively clear and does not contain any ambiguous terms or instructions.
-
-9. **Are there any additional examples or test cases you should consider?** We have already considered the examples provided in the problem statement, including an array with repeated values and an array with distinct values. We have also considered edge cases such as an empty array, a single element array, and an array with all elements being the same.
-
-10. **Do you need to further break down the problem or define sub-problems?** The problem at hand does not require further breakdown into sub-problems. It can be solved by a straightforward approach of checking for duplicate values in the array.
-
-11. **Is there anything else that needs clarification or further understanding?** At this point, if there are no remaining doubts or questions, and you have a good grasp of the problem requirements, it is reasonable to move forward to the next steps.
-
-By going through this checklist, a beginner software engineer can ensure they have a clear understanding of the problem and have addressed any potential doubts or questions before proceeding to the solution design and implementation.
 
 
 ## Step 3: Define the problem's inputs and outputs.
@@ -104,12 +94,27 @@ To define the problem's inputs and outputs, we need to identify the specific var
    - The function `containsDuplicate` takes an integer array `nums` as input.
    - It returns a boolean value (true or false) based on whether any value appears at least twice in the `nums` array.
 
-By defining the problem's inputs and outputs, we have a clear understanding of the function signature and the expected behavior of the solution. This clarity will help us proceed to the next steps of solving the problem.
+
 
 
 ## Step 4: Formulate examples.
 Fortunately, leetcode does this for you.
 In a real interview, feel free to ask for examples.
+
+### Example 1:
+Input: nums = [1,2,3,1]
+
+Output: true
+
+### Example 2:
+Input: nums = [1,2,3,4]
+
+Output: false
+
+### Example 3:
+Input: nums = [1,1,1,3,3,4,3,2,4,2]
+
+Output: true
 
 
 ## Step 5: Break down the problem.
