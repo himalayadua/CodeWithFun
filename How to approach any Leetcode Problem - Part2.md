@@ -156,11 +156,7 @@ Designing an algorithm involves devising a plan or strategy to solve the problem
 
 5. **Return false if no duplicates are found:** After iterating through all elements in the array, if no duplicates were found, return `False` since every element is distinct.
 
-By following this algorithm, we can efficiently determine whether any value appears at least twice in the array or if every element is distinct.
 
-This algorithm utilizes a set data structure, which provides efficient insertion and lookup operations. It ensures that duplicate values are detected by tracking unique values encountered during the iteration.
-
-By understanding and implementing this algorithm, we can solve the problem effectively and obtain the desired outputs.
 
 
 ## Step 7: Choose appropriate data structures.
@@ -186,7 +182,38 @@ Selecting appropriate data structures is crucial for efficient problem solving. 
    - Based on the above evaluation, the most suitable data structure for this problem is a set.
    - Using a set, we can efficiently check for duplicates and add unique elements as we iterate through the array.
 
-By selecting the appropriate data structure, in this case, a set, we can efficiently solve the problem. The set data structure allows us to track unique values, perform efficient lookup operations, and handle duplicates effectively during the iteration process.
+
+### More comparisons:
+
+1. **Set:**
+   - A set data structure ensures uniqueness by not allowing duplicate elements to be stored.
+   - It provides efficient lookup and insertion operations with an average time complexity of O(1).
+   - Sets are particularly useful when we need to check for duplicates and store unique values.
+
+2. **Array/List:**
+   - Arrays or lists are commonly used data structures for storing collections of elements.
+   - They allow duplicate elements and do not provide built-in mechanisms for efficient duplicate checking.
+   - Checking for duplicates in an array or list typically requires iterating through the entire collection, resulting in a time complexity of O(n), where n is the size of the array or list.
+   - Arrays/lists are generally more suitable when the order of elements is important or when duplicates need to be retained.
+
+3. **Dictionary/Map:**
+   - Dictionaries or maps are key-value data structures that associate a value with a unique key.
+   - While dictionaries can be used to solve this problem, they are not the most efficient choice.
+   - Dictionaries provide efficient lookup operations with an average time complexity of O(1) when accessing values based on keys.
+   - However, dictionaries require additional space to store both keys and values, which may not be necessary in this problem where we only need to track unique values.
+
+4. **Binary Search Tree (BST):**
+   - BSTs are tree-based data structures that maintain a sorted order of elements.
+   - While BSTs can be used to solve this problem, they are not the most efficient choice.
+   - BSTs provide efficient insertion and lookup operations with a time complexity of O(log n) on average.
+   - However, maintaining the sorted order of elements in a BST may not be necessary for this problem, where we only need to check for duplicates efficiently.
+
+Comparing these data types to the set data structure:
+
+- Arrays/lists require iterating through the entire collection to check for duplicates, resulting in a higher time complexity compared to the efficient O(1) lookup provided by sets.
+- Dictionaries/maps come with additional overhead to store both keys and values, which may not be necessary for this problem, making sets a more space-efficient choice.
+- BSTs provide efficient lookup operations but require maintaining a sorted order, which is unnecessary for this problem, making sets a simpler and more suitable choice.
+
 
 
 ## Step 8: Implement the algorithm.
