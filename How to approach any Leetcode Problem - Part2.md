@@ -21,8 +21,8 @@ Output: true
 ## Step 1. Understand the problem:
 To understand the problem, you would `note the following key` points:
 
-- The input is an *integer array* called nums.
-- The goal is to determine whether *any value* appears at least twice in the array.
+- The input is an **integer array** called nums.
+- The goal is to determine whether **any value** appears at least twice in the array.
 - If any value appears at least twice, the function should return true. Otherwise, it should return false.
 
 
