@@ -21,4 +21,4 @@ class Solution:
                 sum=0
             curr=curr.next
         return head.next
-        
+
