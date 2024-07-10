@@ -1,6 +1,5 @@
 from typing import List
 
-
 class Solution:
     def averageWaitingTime(self, customers: List[List[int]]) -> float:
         res, finish = 0, 0
