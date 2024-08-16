@@ -27,3 +27,5 @@ class Solution:
             min_diff = min(min_diff, largest_four[i] - smallest_four[i])
 
         return min_diff
+    
+    
