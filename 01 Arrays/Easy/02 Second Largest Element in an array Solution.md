@@ -15,7 +15,6 @@ What do we do to find the largest or the smallest element present in an array? W
 # **Solution 2(Better Solution)**
 -------------------------------
 ### **Intuition:**
-
 Even though we want to have just the second smallest and largest elements, we are still sorting the entire array for that and thus increasing the time complexity. Can we somehow try to not sort the array and still get our answer?
 
 ### **Approach:**
@@ -27,24 +26,19 @@ Even though we want to have just the second smallest and largest elements, we ar
 
 # **Solution 3(Best Solution)**
 -------------------------------
-
 ### **Intuition:**
-
 In the previous solution, even though we were able to bring down the time complexity to O(N), we still needed to do two traversals to find our answer. Can we do this in a single traversal by using smart comparisons on the go?
 
 #### **Approach:**
-
 We would require four variables: small,second_small, large, and second_large. Variable small and second_small are initialized to INT_MAX while large and second_large are initialized to INT_MIN.
 
 **Second Smallest Algo:**
-
 -   If the current element is smaller than 'small', then we update second_small and small variables
 -   Else if the current element is smaller than 'second_small' then we update the variable 'second_small'
 -   Once we traverse the entire array, we would find the second smallest element in the variable second_small.
 -   Here's a quick demonstration of the same.
 
 **Second Largest Algo:**
-
 -   If the current element is larger than 'large' then update second_large and large variables
 -   Else if the current element is larger than 'second_large' then we update the variable second_large.
 -   Once we traverse the entire array, we would find the second largest element in the variable second_large.
