@@ -6,7 +6,6 @@ class ListNode:
         self.next = next
 
 
-
 class Solution:
     def mergeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev, curr=head.next, head.next
