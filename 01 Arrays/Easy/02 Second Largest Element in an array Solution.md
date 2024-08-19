@@ -1,11 +1,10 @@
-### **Solution 1: (Brute Force)**
+# **Solution 1: (Brute Force)**
 --------------------------------
 ### **Intuition:**
 [this approach only works if there are no duplicates]
 What do we do to find the largest or the smallest element present in an array? We ideally sort them and the first element would be the smallest of all while the last element would be the largest. Can we find the second-smallest and second-largest using a similar approach?
 
 ### **Approach:**
-
 -   Sort the array in ascending order
 -   The element present at the second index is the second smallest element
 -   The element present at the second index from the end is the second largest element
@@ -13,22 +12,20 @@ What do we do to find the largest or the smallest element present in an array? W
 
 
 
-### **Solution 2(Better Solution)**
+# **Solution 2(Better Solution)**
 -------------------------------
-
 ### **Intuition:**
 
 Even though we want to have just the second smallest and largest elements, we are still sorting the entire array for that and thus increasing the time complexity. Can we somehow try to not sort the array and still get our answer?
 
 ### **Approach:**
-
 -   Find the smallest and largest element in the array in a single traversal
 -   After this, we once again traverse the array and find an element that is just greater than the smallest element we just found.
 -   Similarly, we would find the largest element which is just smaller than the largest element we just found
 -   Indeed, this is our second smallest and second largest element.
 
 
-### **Solution 3(Best Solution)**
+# **Solution 3(Best Solution)**
 -------------------------------
 
 ### **Intuition:**
