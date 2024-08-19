@@ -10,8 +10,6 @@ What do we do to find the largest or the smallest element present in an array? W
 -   The element present at the second index from the end is the second largest element
 
 
-
-
 # **Solution 2(Better Solution)**
 -------------------------------
 ### **Intuition:**
