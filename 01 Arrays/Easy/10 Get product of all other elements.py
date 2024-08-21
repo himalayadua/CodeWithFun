@@ -14,7 +14,7 @@ def product_except_self(nums):
 nums = [1, 2, 3, 4, 5]
 print(product_except_self(nums))  # Output: [120, 60, 40, 30, 24]
 
-
+###############################################################
 
 # Solution 2
 def product_except_self(nums):
