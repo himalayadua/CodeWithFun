@@ -29,9 +29,8 @@ Result: NO (for 1st variant)
 Explanation: There exist no such two numbers whose sum is equal to the target.
 
 
-
 # Leetcode
-## 1. Two Sum
+**1. Two Sum**
 
 Given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.
 
