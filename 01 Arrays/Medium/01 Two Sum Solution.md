@@ -19,6 +19,6 @@ A simple implementation uses two iterations. In the first iteration, we add each
 
 
 # Approach 3: One-pass Hash Table
-##Algorithm
+## Algorithm
 
 It turns out we can do it in one-pass. While we are iterating and inserting elements into the hash table, we also look back to check if current element's complement already exists in the hash table. If it exists, we have found a solution and return the indices immediately.
