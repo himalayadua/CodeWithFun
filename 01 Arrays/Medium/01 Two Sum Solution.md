@@ -15,7 +15,8 @@ We can reduce the lookup time from O(n)O(n)O(n) to O(1)O(1)O(1) by trading s
 A simple implementation uses two iterations. In the first iteration, we add each element's value as a key and its index as a value to the hash table. Then, in the second iteration, we check if each element's complement (target-nums[i]target - nums[i]target-nums[i]) exists in the hash table. If it does exist, we return current element's index and its complement's index. Beware that the complement must not be nums[i]nums[i]nums[i] itself!
 
 
-# Approach 3: One-pass Hash Table
-## Algorithm
+# Approach 3: 
+One-pass Hash Table
 
+## Algorithm
 It turns out we can do it in one-pass. While we are iterating and inserting elements into the hash table, we also look back to check if current element's complement already exists in the hash table. If it exists, we have found a solution and return the indices immediately.
