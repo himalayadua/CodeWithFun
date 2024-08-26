@@ -25,7 +25,6 @@ Then we will replace the `nums` according to the available counts, we counted 
     -   `counts` takes O(3) ~ O(1)
 
 
-
 # Approach 2: Better Approach
 ## Algorithm / Intuition
 Keeping count of values

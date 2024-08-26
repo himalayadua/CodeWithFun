@@ -61,7 +61,6 @@ print()
 
 
 #Approach 3:
-
 def sortArray(arr):
     low = 0
     mid = 0
