@@ -26,8 +26,6 @@ Result: 4
 
 
 
-
-
 # Leetcode
 ## 169. Majority Element
 Given an array `nums` of size `n`, return *the majority element*.
