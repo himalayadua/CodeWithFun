@@ -1,9 +1,7 @@
-Approach 1: Sorting
+# Approach 1: Sorting
 ===================
 
-Intuition:
-==========
-
+## Intuition:
 The intuition behind this approach is that if an element occurs more than n/2 times in the array (where n is the size of the array), it will always occupy the middle position when the array is sorted. Therefore, we can sort the array and return the element at index n/2.
 
 Explanation:
@@ -20,10 +18,10 @@ The time complexity of this approach is O(n log n) since sorting an array of siz
 
 
 
-Approach 2: Hash Map
+# Approach 2: Hash Map
 ====================
 
-Intuition:
+## Intuition:
 ==========
 
 The intuition behind using a hash map is to count the occurrences of each element in the array and then identify the element that occurs more than n/2 times. By storing the counts in a hash map, we can efficiently keep track of the occurrences of each element.
