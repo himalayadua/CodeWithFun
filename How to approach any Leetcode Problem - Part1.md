@@ -14,7 +14,6 @@ Here's a step-by-step approach that you can follow to solve any LeetCode problem
 
 
 ## Let's consider the following problem as an example:
-
 **Problem:** Given an array of integers, find two numbers such that they add up to a specific target value. Return the indices of the two numbers as an array.
 
 **Example:**
