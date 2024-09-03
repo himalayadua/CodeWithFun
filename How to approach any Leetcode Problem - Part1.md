@@ -81,4 +81,3 @@ print(twoSum([3, 3], 6))          # Output: [0, 1]
 ```
 
 10. **Analyze the time and space complexity:** The time complexity of this solution is O(n) since we iterate through the array once. The space complexity is also O(n) because, in the worst case, we may store all the elements in the hash table.
-
